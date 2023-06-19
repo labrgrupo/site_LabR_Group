@@ -1,0 +1,22 @@
+---
+output: html_document
+---
+# [**Recent Activities and Highlights**]{style="color:darkgreen"}
+
+<br>
+
+```{r setup, echo=FALSE,warning=FALSE,message=FALSE}
+
+
+library(htmltools)
+
+# Definir o caminho para a imagem
+image_path <- "https://i.imgur.com/Id8rzuH.png" 
+
+# Criar um arquivo HTML que contém a imagem
+html_file <- tempfile(fileext = ".html")
+writeLines(paste0('<img src="', image_path, '" alt="Imagem" width="100%">'), html_file)
+
+# Incluir o arquivo HTML no relatório
+includeHTML(html_file)
+```
