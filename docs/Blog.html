@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Blog.knit</title>
+
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Site do Grupo Lab R</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="M9py7JwcT3rz7EWfe31SNr1wxkTWrTN2qYtPYsKMCZA" />
+  <meta name="google-site-verification" content="QYenxqItDmS0MMre0PmnWL9f4YGKX4WmvtJGTEO8Kag" />
+  <meta name="description" content="Lab R Group: The Lab R Group is a voluntary and non-profit collective, founded in 2021, composed of a variety of professionals who work diretamente e indiretamente no setor de laboratório clínico no Brasil. Esses especialistas focam na gestão da qualidade, utilizando ferramentas estatísticas que auxiliam neste empreendimento. O objetivo principal do grupo é implementar a transformação digital em ferramentas de qualidade, utilizando a linguagem de programação R, que é open source e gratuita.">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="keywords" content="GrupoLabR, grupolabr, Grupo Lab R, LabRGroup, Lab R Group, LabR Group, R Markdown, Shiny, Clinical Laboratory, Diagnostic Medicine, Machine Learning, Artificial Intelligence, Biostatistics, Quality Control, Method Validation, Reference Intervals, Bioestatística, Intervalo de Referência, Validação de Métodos, R programming, Rstudio, machine learning, artificial intelligence, clinical laboratory, diagnostic medicine, quality control">
+  <meta name="author" content="Lab R Group">
+  <meta name="theme-color" content="#333">
+  <meta name="language" content="pt-BR, en-US, es-ES">
+  <link rel="canonical" href="https://www.grupolabr.com/" />
+  <link rel="shortcut icon" href="imagens/icon_grupo_lab_r2.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Lab R Group" />
+  <meta property="og:description" content="Promovendo a transformação digital em laboratórios clínicos através da linguagem R." />
+  <meta property="og:image" content="imagens/logo_grupo_lab_r.png" />
+  <meta property="og:url" content="https://www.grupolabr.com/" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo_grupo_lab_r.png" alt="Logo"/>
+      </a>
+    </div>
+    <div class="menu-icon" id="menu-icon">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="About_us.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+      <li><a href="Team.html"><i class="fa fa-users"></i> Team</a></li>
+      <li><a href="Projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+      <li>
+        <a href="#"><i class="fas fa-tools"></i> Tools</a>
+        <ul class="submenu">
+          <li><a href="LabRI_Packed.html"><i class="fa fa-cogs"></i> LabRI Packed</a></li>
+          <li><hr></li>
+          <li><a href="LabRI_chatbot.html"><i class="fa fa-robot"></i> LabRI Chatbot</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-search"></i> Book and Presentations</a>
+        <ul class="submenu">
+          <li><a href="Book.html"><i class="fa fa-book"></i> Book</a></li>
+          <li><hr></li>
+          <li><a href="Presentations.html"><i class="fa fa-slideshare"></i> Presentations</a></li>
+        </ul>
+      </li>
+      <li><a href="Blog.html"><i class="fa fa-blog"></i> Blog</a></li>
+      <li><a href="Contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
+</html>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="About_us.html">
+    <span class="fa fa-info-circle"></span>
+     
+    About Us
+  </a>
+</li>
+<li>
+  <a href="Team.html">
+    <span class="fa fa-users"></span>
+     
+    Team
+  </a>
+</li>
+<li>
+  <a href="Projects.html">
+    <span class="fas fa-folder-open"></span>
+     
+    Projects
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fas fa-tools"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="LabRI_Packed.html">
+        <span class="fa fa-cogs"></span>
+         
+        LabRI Packed
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="LabRI_chatbot.html">
+        <span class="fa fa-robot"></span>
+         
+        LabRI chatbot
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-search"></span>
+     
+    Book and Presentations
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Book.html">
+        <span class="fa fa-book"></span>
+         
+        Book
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="Presentations.html">
+        <span class="fa fa-slideshare"></span>
+         
+        Presentations
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Blog.html">
+    <span class="fa fa-blog"></span>
+     
+    Blog
+  </a>
+</li>
+<li>
+  <a href="Contact.html">
+    <span class="fa fa-envelope"></span>
+     
+    Contact
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p><br></p>
+<div id="blog" class="section level2">
+<h2><span style="color:#0000ff; font-size: 30px;">Blog</span></h2>
+<div
+style="text-align: justify; color: #0000ff; background-color: #fdf9c4; border-radius: 15px; padding: 20px; font-size: 20px;">
+<p><strong>Blog about R Programming in Lab Medicine. A Repository of
+Knowledge and Applications</strong></p>
+</div>
+<p><br></p>
+<p><img src="imagens/Blog.png" width="800" style="border-radius: 20px;"></p>
+<p><br></p>
+<div
+id="may2024-the-transformative-potential-of-machine-learning-in-laboratory-medicine"
+class="section level3">
+<h3><span style="color:#0000ff"><strong>May/2024: The Transformative
+Potential of Machine Learning in Laboratory
+Medicine</strong></span></h3>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p>In the article <a
+href="https://doi.org/10.1016/j.clinbiochem.2022.02.011"><strong>“Applications
+of Machine Learning in Routine Laboratory Medicine: Current State and
+Future Directions”</strong></a>, published in Clinical Biochemistry in
+May 2023, authors Naveed Rabbani, Grace Y. E. Kim, Carlos J. Suarez, and
+Jonathan H. Chen explore the transformative potential of machine
+learning (ML) in laboratory medicine.</p>
+<p>Machine learning leverages vast amounts of data to identify complex
+patterns that rule-based systems and human experts might miss. Its
+application in laboratory medicine is particularly promising, as
+laboratory testing forms the foundation of clinical decision-making.</p>
+<p>Unlike traditional programs defined by pre-coded rules, ML algorithms
+learn from past examples to predict future outcomes. In medicine, the
+most common form of ML, supervised learning, involves training models on
+labeled datasets to make predictions.</p>
+<p>There are different subcategories within machine learning. Supervised
+learning uses labeled data to train models, with common algorithms
+including linear and logistic regression, support vector machines, and
+tree-based models such as random forest and XGBoost. Unsupervised
+learning identifies patterns in unlabeled data, with examples like
+k-means clustering and principal component analysis. Deep learning, a
+subset of ML inspired by neural networks, can perform complex tasks like
+image recognition and language interpretation.</p>
+<p>The authors conducted a comprehensive PubMed search to identify
+relevant articles, focusing on ML applications in routine laboratory
+testing and laboratory information systems. The review revealed several
+exciting applications of ML in laboratory medicine.</p>
+<p>For example, ML models can predict lab test results based on other
+clinical data, optimizing test utilization and supporting clinical
+decision-making. A neural network model predicted iron deficiency anemia
+with an AUROC of 98%.</p>
+<p>Additionally, ML algorithms validate test results and automate
+quality control processes. An ensemble of tree-based algorithms verified
+lab results with 99.9% sensitivity and 98% specificity.</p>
+<p>ML also aids in interpreting test results and creating personalized
+reference ranges. A tree-based model reduced false positives in newborn
+screening without sacrificing sensitivity.</p>
+<p>Another application is in improving laboratory information systems,
+where ML facilitates clinical research by mapping lab data to standard
+codes like LOINC. A tree-based model mapped lab data to LOINC codes with
+98% accuracy.</p>
+<p>Finally, a study showed that ML could recommend which lab tests
+doctors should order based on clinical diagnoses, medications, prior lab
+tests, and demographic information. This neural network model achieved
+an AUROCmacro of 0.76 and an AUROCmicro of 0.87.</p>
+<p>The authors highlight the potential of ML to automate laboratory
+processes, create personalized interpretations of test results, and
+improve clinical decision-making. They envision future algorithms
+providing precision diagnostics based on comprehensive clinical
+contexts.</p>
+<p>Despite its promise, ML in laboratory medicine faces significant
+challenges, such as data quality, standardization and regulation, and
+computational and financial costs. Implementing ML requires substantial
+computational resources and expertise.</p>
+<p>In conclusion, machine learning promises significant advancements in
+laboratory medicine, but the field is still in its early stages.
+Standardization, regulation, and high-quality data are essential for
+fully realizing ML’s potential. Despite the challenges, ML models are
+already demonstrating excellent performance in automating test
+validation and optimizing laboratory operations.</p>
+</div>
+<p><br></p>
+</div>
+<div
+id="may2024-best-practices-for-implementing-machine-learning-in-clinical-laboratories-insights-from-the-ifcc-working-group"
+class="section level3">
+<h3><span style="color:#0000ff"><strong>May/2024: Best Practices for
+Implementing Machine Learning in Clinical Laboratories: Insights from
+the IFCC Working Group</strong></span></h3>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p>In the article <a
+href="https://doi.org/10.1093/clinchem/hvad055"><strong>“Machine
+Learning in Laboratory Medicine: Recommendations of the IFCC Working
+Group”</strong></a>, published in Clinical Chemistry in July 2023,
+authors Stephen R. Master, Tony C. Badrick, Andreas Bietenbeck, and
+Shannon Haymond provide comprehensive guidance on applying machine
+learning (ML) in clinical laboratory settings.</p>
+<p>The article emphasizes that ML has shown tremendous potential for
+clinical applications in laboratory medicine. However, the development
+and validation of ML models must be carefully controlled to avoid common
+pitfalls.</p>
+<p>The ML development process is a multistep, iterative procedure that
+includes: Formulating the Problem, Collecting and Preparing Data,
+Validating and Selecting Models, Reproducible Workflow.</p>
+<p>Ethical ML ensures nondiscriminatory and equitable predictions.</p>
+<p>Key ethical considerations include:</p>
+<ul>
+<li>Using representative training sets.</li>
+<li>Handling demographic and sociological characteristics
+cautiously.</li>
+<li>Avoiding biases that could affect future patients.</li>
+</ul>
+<p>The IFCC Working Group outlines twelve key recommendations:</p>
+<ul>
+<li>State the ML Objective;</li>
+<li>Detail Clinical Scenarios;</li>
+<li>Describe Data Collection and Processing;</li>
+<li>Prevent Data Leakage;</li>
+<li>Use Representative Data;</li>
+<li>Follow Ethical Design Checklists;</li>
+<li>Perform Cross-Validation;</li>
+<li>Report Performance Metrics;</li>
+<li>Evaluate Clinical Utility;</li>
+<li>Include External Validation;</li>
+<li>Provide Data and Code for Validation;</li>
+<li>Verify Generalizability.</li>
+</ul>
+<p>The article acknowledges that it does not cover the regulatory
+implications and ongoing learning algorithms. It focuses on static ML
+classifiers and emphasizes the need for further research and discussion
+on these emerging areas.</p>
+</div>
+<p><br></p>
+</div>
+<div
+id="may2024-machine-learning-based-clinical-decision-support-using-laboratory-data"
+class="section level3">
+<h3><span style="color:#0000ff"><strong>May/2024: Machine learning-based
+clinical decision support using laboratory data</strong></span></h3>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p>In the article <a
+href="https://doi.org/10.1515/cclm-2023-1037"><strong>“Machine
+learning-based clinical decision support using laboratory
+data”</strong></a>, published in the journal Clinical Chemistry and
+Laboratory Medicine in May 2024, authors Hikmet Can Çubukçu, Deniz İlhan
+Topcu, and Sedef Yenice explore how machine learning (ML) techniques are
+revolutionizing clinical decision support using laboratory data.</p>
+<p>Advances in artificial intelligence (AI) and machine learning (ML)
+have significant potential to transform laboratory medicine and the
+healthcare sector as a whole. These technologies not only improve
+diagnostic accuracy but also increase treatment efficiency, offering
+healthcare professionals powerful tools to enhance patient care.</p>
+<p>The development of ML models involves several stages, such as data
+collection and cleaning, feature engineering, model development, and
+optimization. Recently, automated machine learning (AutoML) tools have
+been introduced to simplify this process, allowing experts without deep
+technical knowledge to develop effective models.</p>
+<p>Clinical decision support systems (CDS) play a crucial role in
+interpreting test results, reducing subjectivity, and minimizing
+inconsistencies. By utilizing AI and ML, these systems can significantly
+enhance areas such as early and accurate diagnoses, personalized
+treatment planning, prognostics, medication management, and continuous
+patient monitoring.</p>
+<p><strong>In the laboratory testing process, machine learning is
+applied at different stages:</strong></p>
+<ul>
+<li>In the pre-analytical phase, ML can detect clots, identify
+mislabeled samples, manage sample dilution, detect chemical
+manipulations in urine samples, and assess serum quality;</li>
+<li>In the analytical phase, ML is used for analyzing cell images,
+evaluating mass spectrometry results, and real-time quality
+control;</li>
+<li>In the post-analytical phase, ML helps predict disease outcomes and
+differentiate between medical conditions.</li>
+</ul>
+<p>Despite the many benefits, integrating ML into laboratory medicine
+faces significant challenges, such as model uncertainties, the “black
+box” nature of algorithms, and the need for external validation and
+model explainability. Overcoming these challenges requires close
+collaboration between healthcare professionals and AI experts, the use
+of hybrid intelligence, comprehensive performance evaluations, and
+ensuring well-categorized and standardized clinical data.</p>
+<p>In summary, ML-based decision support systems have the potential to
+drastically improve clinical decision-making. However, successful
+adoption of these technologies requires careful attention to ethical and
+transparency issues.</p>
+</div>
+<p><br></p>
+<hr />
+<p><br></p>
+</div>
+<div
+id="published-in-2023-embracing-the-r-programming-language-a-future-oriented-tool-for-clinical-laboratories"
+class="section level3">
+<h3><span style="color:#0000ff"><strong>Published in 2023: Embracing the
+R Programming Language: A Future-Oriented Tool for Clinical
+Laboratories</strong></span></h3>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p>The article titled <a
+href="https://www.aacc.org/cln/articles/2020/april/why-clinical-laboratorians-should-embrace-the-r-programming-language"><strong>“Why
+Clinical Laboratorians Should Embrace the R Programming
+Language”</strong></a>, published on the <strong>AACC’s website in
+2020</strong>, emphasizes the importance of the R programming language
+for clinical laboratories. As the reliance on data analysis increases,
+clinical laboratories are generating, processing, and storing
+transactional data with a high level of quality and efficiency. These
+data are not only essential for patient care and quality assurance
+activities but are also increasingly being used to guide operational
+decisions.<br />
+</p>
+<p>The article argues that the R programming language is ideal for
+clinical laboratories due to its open, platform-independent, and free
+nature, as well as having a massive, global user and contributor base.
+Applications of R in medicine are growing due to the increasing
+visibility of R’s versatility and the availability of relevant, focused
+training.<br />
+</p>
+<p>R is highly customizable, reproducible, and can be automated. It is
+widely used for its graphic and reporting capabilities, including the
+ability to render publication-quality figures with interactivity and
+generate web-based dashboards and other reports in a variety of
+formats.<br />
+</p>
+<p>The article also discusses how to start programming with R, the five
+key attributes of R, examples of R applications in clinical
+laboratories, and resources for new R programmers. In addition, the
+article emphasizes that they believe that clinical laboratories will
+require increasing use of data analytics to optimize operations, manage
+utilization, and provide improved interpretation of complex laboratory
+data in the context of patients’ medical records.<br />
+</p>
+</div>
+<p><br></p>
+<hr />
+<p><br></p>
+</div>
+<div
+id="published-in-2023-healthcare-revolution-the-power-of-artificial-intelligence-and-data-science-in-laboratory-medicine"
+class="section level3">
+<h3><span style="color:#0000ff"><strong>Published in 2023: Healthcare
+Revolution: The Power of Artificial Intelligence and Data Science in
+Laboratory Medicine</strong></span></h3>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p>The review article titled <a
+href="https://doi.org/10.1016/j.clinbiochem.2019.04.013"><strong>“Data
+science, artificial intelligence, and machine learning: Opportunities
+for laboratory medicine and the value of positive
+regulation”</strong></a> was penned by Damien Gruson and Thibault
+Helleputte, and published in the <strong>Clinical Biochemistry journal
+in the year 2019</strong>.<br />
+</p>
+<p>The article delves into how data science, artificial intelligence,
+and machine learning are unlocking new opportunities for laboratory
+medicine. With the increasing amount and diversity of data that
+healthcare professionals are exposed to, these technologies prove useful
+for the holistic interpretation of this information.<br />
+</p>
+<p>In this scenario, machine learning algorithms require three main
+ingredients: learning algorithms, computational power, and data. With
+the advancement of technology, we now have access to a vast amount of
+patient data, immense computational power, and well-developed learning
+algorithms.<br />
+</p>
+<p>With the development of cloud computing infrastructures, several
+machine learning frameworks have been proposed for the growing number of
+non-data scientists. However, for relevant and robust results, it is
+best to rely on custom approaches designed and implemented by
+experts. </p>
+<p>The complexity of laboratory processes and the challenges associated
+with their integration into care pathways are evident. Data science can
+help overcome these challenges and improve the efficiency of health
+processes. However, translating data science and AI into daily practices
+presents several challenges, including the collection and sharing of
+data with potentially sensitive information. This has raised major
+concerns about privacy.<br />
+</p>
+<p><strong>Key 1 - Patient information and consent:</strong> The patient
+must be informed before the use of any AI technology in the course of
+their care. The AI device should not replace the collection of patient
+consent.</p>
+<p><strong>Key 2 - AI human warranty:</strong> The principle of AI human
+warranty in health should be respected. This warranty should be ensured
+by the regular verification of the management options proposed by the AI
+device.</p>
+<p><strong>Key 3 - Graduation of regulation according to the level of
+sensitivity of health data</strong>: In accordance with the principles
+of bioethics law, the regulation of the implementation of an AI device
+for the processing of large amounts of health data should be graduated
+according to the sensitivity of these data.</p>
+<p><strong>Key 4 - Accompaniment of the adaptation of health
+professions:</strong> The implementation of data science-based devices
+for data processing or robotics will require the adaptation of health
+professions.</p>
+<p><strong>Key 5 - Need for independent guidance:</strong> An
+independent guidance group should be implemented to examine the efforts
+made to promote the four keys outlined above.</p>
+</div>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p>Data science and AI present significant challenges, including
+technical, legal, financial, and ethical challenges. However, these
+challenges can be overcome through technical developments, such as
+distributed learning, and the implementation of positive regulations.
+Data science has the potential to transform laboratory medicine and
+improve the efficiency of health processes.</p>
+</div>
+<p><br></p>
+<hr />
+<p><br></p>
+</div>
+<div
+id="published-in-2023-unveiling-the-lab-r-torian-a-beacon-of-r-programming-in-laboratory-medicine"
+class="section level3">
+<h3><span style="color:#0000ff"><strong>Published in 2023: Unveiling
+The-Lab-R-Torian: A Beacon of R Programming in Laboratory
+Medicine</strong></span></h3>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p><strong>Established in 2015</strong>, <a
+href="https://labrtorian.com/">“The-Lab-R-Torian”</a> is a
+<strong>specialized blog</strong> dedicated to Laboratory Medicine. It
+is curated by Daniel T. Holmes, Head of the Department of Pathology and
+Laboratory Medicine at St. Paul’s Hospital in Vancouver. The blog
+primarily focuses on the application of the statistical programming
+language ‘R’ within Clinical Laboratory Medicine, offering a wealth of
+posts on the subject. This makes it an invaluable resource for
+professionals and enthusiasts in the field.</p>
+</div>
+</div>
+</div>
+
+<footer id="rStudioFooter" class="band full">
+  <div class="bandContent">
+    <div id="logos">
+      <a href="https://github.com/labrgrupo/site_labrgroup" class="fab fa-github"></a>
+      <a href="https://www.youtube.com/@grupolabr4872/videos" class="fab fa-youtube"></a>
+    </div>
+    <div id="copyright">© Copyright 2024 LabR Group</div>
+  </div>
+</footer>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
