@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>LabRI_Packed.knit</title>
+
+<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Site do Grupo Lab R</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="M9py7JwcT3rz7EWfe31SNr1wxkTWrTN2qYtPYsKMCZA" />
+  <meta name="google-site-verification" content="QYenxqItDmS0MMre0PmnWL9f4YGKX4WmvtJGTEO8Kag" />
+  <meta name="description" content="Lab R Group: The Lab R Group is a voluntary and non-profit collective, founded in 2021, composed of a variety of professionals who work diretamente e indiretamente no setor de laboratório clínico no Brasil. Esses especialistas focam na gestão da qualidade, utilizando ferramentas estatísticas que auxiliam neste empreendimento. O objetivo principal do grupo é implementar a transformação digital em ferramentas de qualidade, utilizando a linguagem de programação R, que é open source e gratuita.">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="keywords" content="GrupoLabR, grupolabr, Grupo Lab R, LabRGroup, Lab R Group, LabR Group, R Markdown, Shiny, Clinical Laboratory, Diagnostic Medicine, Machine Learning, Artificial Intelligence, Biostatistics, Quality Control, Method Validation, Reference Intervals, Bioestatística, Intervalo de Referência, Validação de Métodos, R programming, Rstudio, machine learning, artificial intelligence, clinical laboratory, diagnostic medicine, quality control">
+  <meta name="author" content="Lab R Group">
+  <meta name="theme-color" content="#333">
+  <meta name="language" content="pt-BR, en-US, es-ES">
+  <link rel="canonical" href="https://www.grupolabr.com/" />
+  <link rel="shortcut icon" href="imagens/icon_grupo_lab_r2.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Lab R Group" />
+  <meta property="og:description" content="Promovendo a transformação digital em laboratórios clínicos através da linguagem R." />
+  <meta property="og:image" content="imagens/logo_grupo_lab_r.png" />
+  <meta property="og:url" content="https://www.grupolabr.com/" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo_grupo_lab_r.png" alt="Logo"/>
+      </a>
+    </div>
+    <div class="menu-icon" id="menu-icon">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="About_us.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+      <li><a href="Team.html"><i class="fa fa-users"></i> Team</a></li>
+      <li><a href="Projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+      <li>
+        <a href="#"><i class="fas fa-tools"></i> Tools</a>
+        <ul class="submenu">
+          <li><a href="LabRI_Packed.html"><i class="fa fa-cogs"></i> LabRI Packed</a></li>
+          <li><hr></li>
+          <li><a href="LabRI_chatbot.html"><i class="fa fa-robot"></i> LabRI Chatbot</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-search"></i> Book and Presentations</a>
+        <ul class="submenu">
+          <li><a href="Book.html"><i class="fa fa-book"></i> Book</a></li>
+          <li><hr></li>
+          <li><a href="Presentations.html"><i class="fa fa-slideshare"></i> Presentations</a></li>
+        </ul>
+      </li>
+      <li><a href="Blog.html"><i class="fa fa-blog"></i> Blog</a></li>
+      <li><a href="Contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
+</html>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="About_us.html">
+    <span class="fa fa-info-circle"></span>
+     
+    About Us
+  </a>
+</li>
+<li>
+  <a href="Team.html">
+    <span class="fa fa-users"></span>
+     
+    Team
+  </a>
+</li>
+<li>
+  <a href="Projects.html">
+    <span class="fas fa-folder-open"></span>
+     
+    Projects
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fas fa-tools"></span>
+     
+    Tools
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="LabRI_Packed.html">
+        <span class="fa fa-cogs"></span>
+         
+        LabRI Packed
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="LabRI_chatbot.html">
+        <span class="fa fa-robot"></span>
+         
+        LabRI chatbot
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-search"></span>
+     
+    Book and Presentations
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="Book.html">
+        <span class="fa fa-book"></span>
+         
+        Book
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="Presentations.html">
+        <span class="fa fa-slideshare"></span>
+         
+        Presentations
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="Blog.html">
+    <span class="fa fa-blog"></span>
+     
+    Blog
+  </a>
+</li>
+<li>
+  <a href="Contact.html">
+    <span class="fa fa-envelope"></span>
+     
+    Contact
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="a.-labri-package" class="section level1">
+<h1><span style="color:#0000ff; font-size: 25px;">A. LabRI
+Package</span></h1>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<p>The <strong>LabRI tool</strong> is an R Markdown file that employs
+the indirect method called the <strong>LabRI Method</strong>. This
+method is an adaptive and multi-criteria approach for the
+<a href="#" class="alert-link">estimation and verification</a> of
+reference intervals, utilizing a combination of data cleaning
+algorithms, data transformation, clustering techniques, and the refineR
+and reflimR algorithms or the expectation-maximization (EM) algorithm,
+depending on the number of clusters in the truncated distribution.</p>
+</div>
+<p><br></p>
+<div
+style="text-align: justify; text-indent: 30px; line-height: 1.8; color: black;">
+<ul>
+<strong>Characteristics of the LabRI Method:</strong>
+</ul>
+<p><br></p>
+<ul style="list-style-type: circle;">
+<li>
+<strong>Adaptive:</strong> Adjusts its application based on the
+structure and characteristics of the data, using different cleaning and
+transformation techniques as needed. Applies the Centroid of Windsorized
+Reference Limits method using refineR and reflimR if the data
+distribution has more than one cluster for reference interval
+estimation. If there is only one cluster, the expectation-maximization
+algorithm is used with both parametric and non-parametric approaches to
+obtain the best reference interval estimate.
+</li>
+<br>
+<li>
+<strong>Multi-criteria:</strong> Considers multiple criteria and methods
+for the estimation and verification of reference intervals, ensuring a
+robust and comprehensive analysis.
+</li>
+</ul>
+</div>
+<p><br></p>
+<div class="cta-card"
+onclick="window.location.href=&#39;https://www.dropbox.com/scl/fi/bidfv5kiquiexune4nqux/LabRI_Package.zip?rlkey=1hmqusbh0huihcw1koo7q928m&amp;st=pxl4a23t&amp;dl=1&#39;">
+<img src="imagens/LabRI_tool.png" alt="Clique Aqui para Explorar o Blog do Grupo Lab R">
+<h2>
+<strong>Download the compressed package (Click here)</strong>
+</h2>
+</div>
+<p><br></p>
+<style>
+  .cta-card {
+    background: linear-gradient(to bottom, #6699ff, #022873); /* Gradiente de azul */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin: 20px 0;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    max-width: 500px; /* Limita a largura máxima */
+  }
+  .cta-card:hover {
+    transform: scale(1.05);
+  }
+  .cta-card img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .cta-card h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ffff89;
+  }
+</style>
+<p><br></p>
+</div>
+<div id="b.-tutorial" class="section level1">
+<h1><span style="color:#0000ff; font-size: 25px;">B.
+Tutorial</span></h1>
+<p><br></p>
+<div
+style="text-align: justify; color: #0000ff; background-color: #fdf9c4; border-radius: 15px; padding: 20px; font-size: 20px;">
+<p><strong>Tutorial for Installing R and RStudio, R Packages, and Using
+Tools from the LabRI Package</strong></p>
+</div>
+<div id="º-installing-the-r-language" class="section level2">
+<h2><span style="color:#0000ff; font-size: 15px;"><strong>1º) Installing
+The R Language</strong></span></h2>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.5; color: black;">
+<p>
+When entering the page <a href="http://www.r-project.org"
+class="uri">http://www.r-project.org</a>, we must click “CRAN”, as shown
+in <strong>Fig. 1</strong>:
+</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.1.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig. 1.</strong> Website www.r-project.org. The blue arrow
+indicates the link to access the Comprehensive R Archive Network
+(CRAN).</p>
+</div>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+After that, we must choose which server we will download the R language
+from. Take, for example, a University of São Paulo (USP) mirror
+(<strong>Fig. 2A</strong>). Next, we must choose which Operating System
+your machine will use to install the R language (<strong>Fig.
+2B</strong>):
+<div style="margin-left: 20px;">
+<p><br></p>
+<ul>
+<li><p>For Windows users: click on “Download R for Windows”, then “base”
+and “Download R-X.X.X for Windows”. Run the downloaded file and install
+it as usual, with the default settings;</p></li>
+<li><p>For Mac users: click on “Download R for macOS”, then on “R-
+X.X.X.pkg”. Install the application as usual, with the default
+settings;</p></li>
+<li><p>For Linux users: check if the adopted distribution already has R
+installed at the factory – e.g.: Debian, RedHat [Fedora], Suse
+[OpenSuse], Ubuntu. If not, follow the instructions at the link <a
+href="https://vps.fmvz.usp.br/CRAN/"
+class="uri">https://vps.fmvz.usp.br/CRAN/</a>.</p></li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.2.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig. 2.</strong> Interface of the Comprehensive R Archive
+Network (CRAN) page, where users can choose the closest server (mirror)
+to download the R language. <strong>A:</strong> In the example, a server
+from the University of São Paulo (USP) is highlighted ) in Brazil (blue
+arrow). <strong>B:</strong> After choosing the server, the user must
+select the operating system of their machine to proceed with the
+download. The options available for Windows (red arrow), macOS (blue
+arrow) and various Linux distributions (black arrow).</p>
+</div>
+<p><br></p>
+</div>
+<div id="º-installing-rstudio" class="section level2">
+<h2><span style="color:#0000ff; font-size: 15px;"><strong>2º) Installing
+Rstudio</strong></span></h2>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p>On the <a href="https://posit.co/downloads/"
+class="uri">https://posit.co/downloads/</a> page, we must click on
+“Downloadn RStudio” (<strong>Fig. 3A</strong>). After that, we must
+scroll down the page and click on the button associated with the
+“Install RStudio” option (<strong>Fig. 3B</strong>).</p>
+<p><strong>NOTE:</strong> Remember to install the R software before
+installing RStudio. After completing the download, install the software
+keeping the default settings.</p>
+</div>
+<p><img src="imagens/Fig.3.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig. 3.</strong> Downloading and Installing RStudio. (A)
+RStudio IDE download page. The red arrow indicates the “DOWNLOAD
+RSTUDIO” button, which users should click to start the download process.
+(B) Installation steps for R and RStudio. The red arrow in section 2
+points to the “DOWNLOAD RSTUDIO DESKTOP FOR WINDOWS” button, guiding
+users to download the correct version for their operating system.</p>
+</div>
+<p><br></p>
+</div>
+<div id="º-installing-r-packages" class="section level2">
+<h2><span style="color:#0000ff; font-size: 15px;"><strong>3º) Installing
+R Packages</strong></span></h2>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p>An R package is a collection of functions, data and documentation
+that extends the capabilities of the R programming environment. After
+installing the R and RStudio software, we must install some R
+packages.</p>
+<p><strong>A.</strong> Download and unzip the
+<strong>“LabRI_Package.zip”</strong> folder to the desired location on
+your computer (<strong>Fig. 4</strong>);</p>
+<p><strong>B.</strong> Open the unzipped folder and look for the file
+with the extension “.Rproj” called
+<strong>“1_PROJECT_LabRI_Tool”</strong>. This is the RStudio project
+file;</p>
+<p><strong>C.</strong> Double click on the
+<strong>“1_PROJECT_LabRI_Tool.Rproj”</strong> file. This will launch
+RStudio (if it is already installed on your machine) and automatically
+open the project, setting the correct directory as your working
+directory;</p>
+<p><strong>D.</strong> Once inside RStudio, you will see all Rmarkdown
+files (extension “.Rmd”) and scripts associated with the project listed
+in the files panel;</p>
+<p><strong>E.</strong> In the list of files, locate and click the file
+named <strong>“2_INSTALL_R_packages.Rmd”</strong>. This file contains
+the script necessary to install the R packages required to use the LabRI
+and refineR tools (<strong>Fig. 5</strong>);</p>
+<p><strong>F.</strong> With the file open, you will see the “block of
+code”, known as the “Chunk”. To install the packages, you will need to
+run this “Chunk”. To run a Chunk, position the cursor inside the Chunk
+and look for a button in the top right corner of the Chunk that looks
+like a small triangle or arrow (sometimes referred to as “Run Current
+Block” or “Run Current Chunk”). Click this button to run the code inside
+“Chunk” (<strong>Fig. 6</strong>);</p>
+<p><strong>H.</strong> After running “Chunk”, RStudio will attempt to
+install and load all listed packages.</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.4.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig.4.</strong> Unzipping and Organizing the LabRI Package.
+Compressed file “LabRI_Package.zip” that needs to be unzipped (blue
+arrow) to access its contents. Once unzipped, the folder
+“LabRI_Package”, containing various subfolders and files necessary for
+the project. Directory structure within the “LabRI_Package” folder,
+highlighting the project file “1_PROJECT_LabRI_Tool.Rproj” (red arrow)
+for opening the project in RStudio. The directory also includes other
+important files and R scripts such as “2_INSTALL_R_packages.Rmd”,
+“3_SCRIPT_RMask_Pseudoanonymizer.Rmd”, “4_SCRIPT_LabRI_Method.Rmd”, and
+“5_SCRIPT_refineR_algorithm.Rmd”</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.5.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig.5.</strong> RStudio console displaying the startup
+information for R version 4.4.0, including details about the R
+environment and instructions for accessing help and citations. This
+indicates the successful launch of an R session. Project directory
+structure in RStudio, highlighting the project file
+“1_PROJECT_LabRI_Tool.Rproj” (blue arrow).</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.6.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig.6.</strong> RStudio environment displaying the R Markdown
+file “2_INSTALL_R_packages.Rmd” with a code block (chunk) dedicated to
+installing and loading the necessary R packages for the project. The
+comment line instructs to click “Run Current Chunk” to execute the code.
+The code block (chunk) is highlighted, showing the list of packages to
+be checked and installed if not already present. The “Run Current Chunk”
+button (blue arrow) is highlighted with the instruction “Click ‘Run
+Current Chunk’ to execute the code block” in a yellow box, emphasizing
+the action needed to install and load the required packages.</p>
+</div>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p>In the console, you will see a string of TRUE or FALSE values. A TRUE
+value indicates that the package was loaded successfully, while a FALSE
+value indicates that there was a problem. To ensure the full functioning
+of tools that indirectly estimate the reference range, such as LabRI and
+refineR, it is crucial that all listed packages return TRUE after
+attempted installation and loading (<strong>Fig. 7</strong>).</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.7.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig.7.</strong> Packages checked and their installation
+status (blue bracket), ensuring all dependencies are met for running the
+scripts effectively.</p>
+</div>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p><strong>SETTINGS</strong></p>
+<p><strong>A) SECRET KEY</strong></p>
+<ul>
+<li><strong>Secret_key (salt):</strong> Key used for hashing purposes.
+It is crucial to keep it confidential to ensure the security of the
+hashing process.</li>
+</ul>
+<p><strong>B) FILE NAME AND COLUMNS</strong></p>
+<ul>
+<li><strong>File_name:</strong> Name of the file that contains the
+dataset.</li>
+<li><strong>IdentifierColumn:</strong> Column containing unique
+identifiers that will be pseudo-anonymized.</li>
+<li><strong>Column_age:</strong> Optional column containing information
+about the patient’s age or another identifier, which can be combined
+with IdentifierColumn for hashing.</li>
+</ul>
+<p><strong>C) FILE FORMAT</strong></p>
+<ul>
+<li>The user defines the data file format by marking the corresponding
+option with an “X” (CSV, XLSX or XLS).</li>
+</ul>
+</div>
+<p><br></p>
+</div>
+<div id="º-settings-for-using-the-labri-tool" class="section level2">
+<h2><span style="color:#0000ff; font-size: 15px;"><strong>4º) Settings
+For Using The LabRI Tool</strong></span></h2>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p>This Rmarkdown script, <strong>“4_SCRIPT LabRI_Method.Rmd”</strong>
+(<strong>Fig. 8 and 9</strong>), which uses the LabRI method, is
+designed to indirectly estimate the reference interval from the
+computerized laboratory system database. Locate it in the file list and
+click to open it. With this file open, you will see several sections
+where you can define parameters and information relevant to the
+analysis.</p>
+<p>Follow the instructions and fill in the information requested in each
+section. Areas where you need to enter information or make selections
+are clearly indicated. Fill in all textual and numerical information and
+leave them in quotation marks (” “).</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.8.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.5; color: black; font-size: 0.95em;">
+<p><strong>Fig.8.</strong> Project directory structure in RStudio
+highlighting the file “3_SCRIPT RMask_Anonimizer.Rmd” (blue arrow),
+which contains the script for refining the reference interval
+algorithm.</p>
+</div>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p><strong>SETTINGS</strong></p>
+<p><strong>A) FILE AND COLUMN NAME</strong></p>
+<ul>
+<li><p><strong>File_Name:</strong> The name of the file that contains
+the data to be analyzed.</p></li>
+<li><p><strong>Column_Name:</strong> The name of the specific column
+within this file that will be used in the analysis.</p></li>
+</ul>
+<p><strong>Note 1:</strong> The default setting for the file name is
+“dataset”.</p>
+<p><br></p>
+<p><strong>B) FILE FORMAT</strong></p>
+<ul>
+<li><strong>CSV, XLSX and XLS:</strong> The user marks the file format
+they are using with an “X”.</li>
+</ul>
+<p><strong>Notes 2:</strong> The default settings is “CSV” for the file
+format.</p>
+<p><br></p>
+<p><strong>C) DECIMAL SEPARATOR</strong></p>
+<ul>
+<li><strong>decimal_point and decimal_comma:</strong> Mark with an “X”
+the decimal separator used in the file</li>
+</ul>
+<p><strong>Notes 3:</strong> The default settings is “.” as a decimal
+separator.</p>
+<p><br></p>
+<p><strong>D) ONE-SIDED OR TWO-SIDED REFERENCE INTERVALS?</strong></p>
+<ul>
+<li><p>Here, the user selects the type of reference interval that will
+be used:</p></li>
+<li><p><strong>Double_sided:</strong> Range with Lower and Upper
+Limit.</p></li>
+<li><p><strong>Right_sided:</strong> Upper Limit Only.</p></li>
+<li><p><strong>Left_side:</strong> Lower Limit Only.</p></li>
+</ul>
+<p><strong>Note 4:</strong> The default setting is a “Double-sided”
+range.</p>
+<p><br></p>
+<p><strong>E) NUMBER OF DECIMALS FOR THE LIMITS OF THE REFERENCE
+INTERVAL</strong></p>
+<ul>
+<li>Number_of_decimal_places: Defines how many decimal places will be
+used for the reference limits. Note 5: The default setting for the
+number of decimal places is “2”.</li>
+</ul>
+</div>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p><strong>INFORMATION ABOUT THE STUDY</strong></p>
+<p><strong>A) RESPONSIBLE PERSON</strong></p>
+<ul>
+<li><strong>Responsible_person:</strong> The person responsible for the
+study or data collection.</li>
+</ul>
+<p><br></p>
+<p><strong>B) MEASUREMENT PROCEDURE</strong></p>
+<ul>
+<li><strong>Measurement_procedure:</strong> The procedure used to obtain
+the measurements.</li>
+</ul>
+<p><br></p>
+<p><strong>C) NAME OF MEASURAND</strong></p>
+<ul>
+<li><p>Is the name of the analyte the same as the name of the column in
+the file? Mark the appropriate answer with an “X”: Yes or No</p></li>
+<li><p><strong>Name_of_measurand:</strong> Name of the measurand. If it
+is different from the column name in the csv, xls or xlsx extension
+file, the user must enter it.</p></li>
+</ul>
+<p><br></p>
+<p><strong>D) UNIT OF MEASUREMENT</strong></p>
+<ul>
+<li><strong>Unit_of_measurement:</strong> Unit of measurement of the
+analyte.</li>
+</ul>
+<p><br></p>
+<p><strong>E) TYPE OF BLOOD SPECIMEN</strong></p>
+<ul>
+<li><strong>Type_of_blood_specimen:</strong> Type of blood sample
+used.</li>
+</ul>
+<p><br></p>
+<p><strong>F) AGE RANGE</strong></p>
+<ul>
+<li><strong>Age_range:</strong> Age range of individuals in the
+study.</li>
+</ul>
+<p><br></p>
+<p><strong>G) SEX</strong></p>
+<ul>
+<li><strong>Sex:</strong> Sex of the individuals in the study.</li>
+</ul>
+<p><br></p>
+<p><strong>H) EXCLUSION CRITERIA</strong></p>
+<ul>
+<li><strong>Exclusion_criteria:</strong> Criteria used to exclude
+certain data or individuals.</li>
+</ul>
+<p><br></p>
+<p><strong>I) DATA SOURCE</strong></p>
+<ul>
+<li><strong>Data_source:</strong> Data source.</li>
+</ul>
+<p><br></p>
+<p><strong>J) REFERENCE INTERVAL OF THE COMPARATIVE
+REFERENCE</strong></p>
+<ul>
+<li><p><strong>Upper_Reference_Limit_of_Comparative_Reference:</strong>
+Upper Reference Limit of the comparative reference which may be a
+reference range in use, estimated by another method, published in a
+scientific journal, available from an external source, etc.</p></li>
+<li><p><strong>Lower_Reference_Limit_of_Comparative_Reference:</strong>
+Upper reference limit of the comparative reference which may be a
+reference range in use, estimated by another method, published in a
+scientific journal, available from an external source, etc.</p></li>
+<li><p><strong>Source_of_comparative_reference_used:</strong> Source of
+the comparative reference range. Note: RI = Reference Interval.</p></li>
+</ul>
+<p><strong>NOTE:</strong> Some of the approaches, methods, or algorithms
+that can be used as comparative references can be found in the links
+below.</p>
+<p><a href='https://sourceforge.net/projects/bellview/' target='_blank' style='color: darkblue; background-color: #FFFACD; padding: 2px;'>[<strong>sourceforge,
+Bellview</strong> - <strong>Available method</strong>:
+Bhattacharya]</a></p>
+<p><a href='https://www.gocrunch.tech/' target='_blank' style='color: darkblue; background-color: #FFFACD; padding: 2px;'>[<strong>goCrunch</strong>
+- <strong>Available methods</strong>: Bhattacharya, Hoffmann and
+refineR]</a></p>
+<p><a href='https://kc.uol.de/rifindr/' target='_blank' style='color: darkblue; background-color: #FFFACD; padding: 2px;'><strong>University
+Medicine Oldenburg (Universitätsmedizin Oldenburg, OMU)</strong> -
+<strong>Available methods</strong>: TMC, TML, refineR and
+reflimR</a></p>
+<p><br></p>
+<p><strong>L) MANUALLY SELECT THE NUMBER OF GROUPS (1 to 7)</strong></p>
+<ul>
+<li><strong>Number_of_clusters:</strong> Allows the user to manually
+select the number of groups (1 to 7).</li>
+</ul>
+<p><br></p>
+<p><strong>M) SET THE MAXIMUM SAMPLE SIZE IF APPLICABLE</strong></p>
+<ul>
+<li><strong>Maximum_sample_size:</strong> Defines the maximum size of
+the sample that will be analyzed, when applicable. For devices with RAM
+between 8 and 16 GB, when possible, a sample of 10,000 to 15,000 to
+ensure the HTML report is generated in a timely manner. In cases of
+highly skewed or highly contaminated data (&gt;25%), sample sizes
+greater than 20,000 or a sample size sufficient to stabilize the
+reference limit estimates are recommended, when applicable. For devices
+with RAM greater than 16 GB, the script can process samples greater than
+20,000 in an efficient period of time.</li>
+</ul>
+<p><strong>Note:</strong> Using the indirect sampling technique, the
+recommended minimum sample size is approximately 1,000 and a considered
+large sample size is approximately 15,000 to 20,000. Furthermore, as
+important as the sample size is the quality of the data. Therefore, it
+is critical to define useful and relevant exclusion criteria and
+filtering criteria to mitigate the magnitude of contamination with
+pathological results.</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.9.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.8; color: black;font-size: 0.95em;">
+<p><strong>Fig.9.</strong> Generating the Reference Interval Estimation
+and Verification Report using the LabRI Tool. The “Knit” button (blue
+arrow) is used to render and generate the HTML report. The instruction
+“Click on ‘Knit’ to start rendering and generating the HTML report” is
+highlighted in a yellow box for clarity.</p>
+</div>
+<p><br></p>
+</div>
+<div id="º-information-about-the-dataset-and-the-measurand-under-study"
+class="section level2">
+<h2><span style="color:#0000ff; font-size: 15px;"><strong>5º)
+Information About The Dataset And The Measurand Under
+Study</strong></span></h2>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p>The LabRI package contains a folder called ‘1_Dataset’ where all
+datasets are stored. For the Rmarkdown LabRI and refineR tools to
+correctly identify the data set under study, within the
+<strong>“1_Dataset”</strong> folder, the name of the file, the format of
+this file, the name of the column of the measurand under analysis must
+be correctly identified, highlighted within the folder of datasets.
+Avoid using spaces when naming the file or column. In place of spaces
+for compound names, use underscore as shown in <strong>Fig.
+10</strong>.</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.10.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.8; color: black;font-size: 0.95em;">
+<p><strong>Fig.10.</strong> File and column name organization. (A)
+Directory structure highlighting the “1_Dataset” folder. The blue arrow
+points to the “1_Dataset” folder that contains the data to be analyzed.
+(B) Name of the Excel file “ALP_Male_Omuse_et.al_2020.xlsx” with red
+brackets highlighting the full file name. (C) Example of a data
+spreadsheet, where the “ALP” column is highlighted. The blue arrow
+points to the “ALP” header, indicating the column of interest. (D) R
+code for defining file and column names. The red arrow points to the
+file name “ALP_Male_Omuse_et.al_2020” and the blue arrow points to the
+column name “ALP”.</p>
+</div>
+<p><br></p>
+</div>
+<div id="º-export-of-figures" class="section level2">
+<h2><span style="color:#0000ff; font-size: 15px;"><strong>6º) Export Of
+Figures</strong></span></h2>
+<p><br></p>
+<div style="text-align: justify; line-height: 1.8; color: black;">
+<p><strong>Figure 11A</strong> shows the folder named
+<strong>“3_Exported_daset_and_figures”</strong>, which contains the main
+figures exported after executing the LabRI tool script, as illustrated
+in <strong>Figure 11B</strong>.</p>
+</div>
+<p><br></p>
+<p><img src="imagens/Fig.11.png" width="800" style="border: 1px solid black;"></p>
+<div
+style="text-align: justify; line-height: 1.8; color: black;font-size: 0.95em;">
+<p><strong>Fig.11.</strong> Directory Organization and Exported Figures.
+(A) Structure of the working directory highlighting the folder
+“3_Exported_daset_and_figures” (blue arrow), which contains the exported
+figures. (B) List of exported figures.</p>
+</div>
+<p><br></p>
+</div>
+</div>
+
+<footer id="rStudioFooter" class="band full">
+  <div class="bandContent">
+    <div id="logos">
+      <a href="https://github.com/labrgrupo/site_labrgroup" class="fab fa-github"></a>
+      <a href="https://www.youtube.com/@grupolabr4872/videos" class="fab fa-youtube"></a>
+    </div>
+    <div id="copyright">© Copyright 2024 LabR Group</div>
+  </div>
+</footer>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
