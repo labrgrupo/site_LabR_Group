@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Livros Recomendados | R, Rmarkdown e Shiny — Grupo Lab R</title>
+  <meta name="description" content="Curadoria de livros online gratuitos sobre linguagem R, R Markdown, Shiny, bioestatística e machine learning — selecionados pelo Grupo Lab R para estudantes e profissionais de laboratório clínico."/>
+  <meta name="author" content="Grupo Lab R"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+  <link rel="canonical" href="https://grupolabr.com/Book.html"/>
+  <link rel="icon" type="image/png" href="imagens/logo_grupo_lab_r.png"/>
+  <link rel="apple-touch-icon" href="imagens/logo_grupo_lab_r.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Grupo Lab R"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="og:title" content="Livros Recomendados | R, Rmarkdown e Shiny — Grupo Lab R"/>
+  <meta property="og:description" content="Curadoria de livros online gratuitos sobre linguagem R, R Markdown, Shiny, bioestatística e machine learning — selecionados pelo Grupo Lab R."/>
+  <meta property="og:url" content="https://grupolabr.com/Book.html"/>
+  <meta property="og:image" content="https://grupolabr.com/imagens/logo_grupo_lab_r.png"/>
+  <meta property="og:image:alt" content="Logo do Grupo Lab R"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Livros Recomendados de R — Grupo Lab R"/>
+  <meta name="twitter:description" content="Livros gratuitos online sobre R, Shiny e R Markdown, curados pelo Grupo Lab R."/>
+  <meta name="twitter:image" content="https://grupolabr.com/imagens/logo_grupo_lab_r.png"/>
+  <link rel="stylesheet" href="labr-style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <script defer src="labr-icons.js"></script>
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":["Organization","EducationalOrganization"],"@id":"https://grupolabr.com/#organization","name":"Grupo Lab R","alternateName":["Grupo LabR","GrupoLabR","Grupo Lab-R","Lab R Group","LabR Group","LabRGroup","Lab-R Group","LabR","Lab R"],"url":"https://grupolabr.com/","logo":{"@type":"ImageObject","url":"https://grupolabr.com/imagens/logo_grupo_lab_r.png","width":512,"height":512},"image":"https://grupolabr.com/imagens/logo_grupo_lab_r.png","description":"Grupo Lab R (Lab R Group) é um coletivo voluntário e sem fins lucrativos de cientistas e profissionais de laboratório clínico que aplica a linguagem de programação R à gestão da qualidade, intervalos de referência, validação de métodos, controle estatístico de qualidade e inteligência artificial em medicina diagnóstica. The Lab R Group is a non-profit collective applying R programming to clinical laboratory quality.","foundingDate":"2021","foundingLocation":{"@type":"Place","name":"Brasil"},"areaServed":"Brasil","knowsAbout":["Linguagem R","R programming language","Laboratório clínico","Clinical Laboratory","Medicina diagnóstica","Diagnostic medicine","Controle de Qualidade Estatístico","Statistical Quality Control","Intervalos de Referência","Reference Intervals","Validação de Métodos","Method Validation","CLSI","IFCC","Regras de Westgard","Westgard Rules","Six Sigma laboratório","Biostatística","Biostatistics","Inteligência Artificial em saúde","Machine Learning medicina laboratorial","Shiny applications","R Shiny","ISO 15189","Gestão da qualidade laboratorial"],"sameAs":["https://github.com/labrgrupo","https://github.com/labrgrupo/site_labrgroup","https://www.youtube.com/@grupolabr4872"]},{"@context":"https://schema.org","@type":"WebSite","@id":"https://grupolabr.com/#website","name":"Grupo Lab R","alternateName":["Lab R Group","GrupoLabR","LabR Group"],"url":"https://grupolabr.com/","inLanguage":["pt-BR","en"],"publisher":{"@id":"https://grupolabr.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://grupolabr.com/?q={search_term_string}","query-input":"required name=search_term_string"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://grupolabr.com/"},{"@type":"ListItem","position":2,"name":"Livro","item":"https://grupolabr.com/Book.html"}]}]</script>
+</head>
+<body>
+<nav class="labr-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="imagens/logo_grupo_lab_r.png" alt="Lab R Group"/>
+    <div class="brand-wrap">
+      <span class="brand">Grupo Lab R</span>
+      <span class="brand-sub">grupolabr.com</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About_us.html">About Us</a></li>
+    <li><a href="Team.html">Team</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li class="has-drop"><a href="#">Tools</a>
+      <div class="drop">
+        <a href="LabRI_Packed.html">LabRI Packed</a>
+        <a href="LabRI_chatbot.html">LabRI Chatbot</a>
+      </div>
+    </li>
+    <li class="has-drop"><a href="#">Resources</a>
+      <div class="drop">
+        <a href="Book.html">Books</a>
+        <a href="Presentations.html">Presentations</a>
+  <a href="FAQ.html">FAQ</a>
+      </div>
+    </li>
+    <li><a href="Blog.html">Blog</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html">Home</a><a href="About_us.html">About Us</a><a href="Team.html">Team</a>
+  <a href="Projects.html">Projects</a><a href="Blog.html">Blog</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="Contact.html">Contact</a>
+</div>
+<div class="page">
+  <section class="section" style="padding-bottom:0;">
+    <div class="section-label">// curated reading list</div>
+    <h1 class="section-title" style="font-size:clamp(2rem,4vw,3.2rem);">Books: R Programming,<br/>Rmarkdown & Shiny</h1>
+    <p class="section-body" style="max-width:760px;">We understand that the journey to mastering any programming language can be challenging — but also incredibly rewarding. To assist you, we curated a selection of free, high-quality online books covering everything from the fundamentals of R to advanced topics like Shiny applications, reproducible reports with R Markdown, machine learning, and data visualization.</p>
+    <p class="section-body" style="max-width:760px;">The best way to learn is by doing, so we encourage you to work through the examples and exercises in each book. All titles below link directly to the authors' openly published online versions — click to open in a new tab. Happy reading!</p>
+  </section>
+
+  <section class="section" style="padding-top:48px;">
+    <div class="book-count">
+      <span class="book-count-num">32</span>
+      <span class="book-count-label">free online books · open in a new tab</span>
+    </div>
+
+    <ul class="book-list" id="bookList"></ul>
+  </section>
+</div>
+<footer class="labr-footer">
+  <div class="footer-logo"><img src="imagens/logo_grupo_lab_r.png" alt="Lab R Group"/></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="About_us.html">About Us</a>
+    <a href="Team.html">Team</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Blog.html">Blog</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://github.com/labrgrupo/site_labrgroup" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.youtube.com/@grupolabr4872/videos" title="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div class="footer-copy">© 2021–2026 Grupo Lab R · Todos os direitos reservados</div>
+  <div class="footer-mono">// open source · non-profit · made with R</div>
+  <div class="footer-meta">
+    <span class="meta-item"><span class="dot"></span><span class="meta-label">Site</span><span class="meta-value">Grupo Lab R</span></span>
+    <span class="meta-item"><span class="dot"></span><span class="meta-label">Developed by</span><span class="meta-value">Alan Carvalho Dias</span></span>
+    <span class="meta-item"><span class="dot"></span><span class="meta-label">Last update</span><span class="meta-value">April 2026</span></span>
+  </div>
+</footer>
+<script>document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileNav').classList.toggle('open'));</script>
+<script>
+  // Nav auto-hide on scroll
+  (function(){
+    const nav = document.querySelector('.labr-nav');
+    let last = 0;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      nav.classList.toggle('scrolled', y > 40);
+      if (y > last && y > 140) nav.classList.add('hidden');
+      else nav.classList.remove('hidden');
+      last = y;
+    }, { passive: true });
+  })();</script>
+<script>
+// Books data: curated list of free online R / Rmarkdown / Shiny books
+const BOOKS = [
+  {authors:"ARNOLD, Christoph Hanck; MARTIN; GERBER, Alexander; SCHMELZER, Martin",title:"Introduction to Econometrics with R",publisher:"University of Duisburg-Essen",year:"2021",url:"https://www.econometrics-with-r.org/index.html"},
+  {authors:"ARNOLD, Jeffrey; WICKHAM, Hadley; GROLEMUND, Garrett",title:"R for Data Science: Exercise Solutions",publisher:"O'Reilly Media, 1st ed.",year:"2019",url:"https://jrnold.github.io/r4ds-exercise-solutions/"},
+  {authors:"BOEHMKE, Bradley; GREENWELL, Brandon",title:"Hands-On Machine Learning with R",publisher:"Chapman and Hall/CRC, 1st ed.",year:"2019",url:"https://bradleyboehmke.github.io/HOML/"},
+  {authors:"CAMELETTI, Michela",title:"Machine Learning for Economics 2020/21: R labs",publisher:"University of Bergamo",year:"2021",url:"https://bookdown.org/michela_cameletti/rlabnotes_mlfe2021/"},
+  {authors:"CEJA, Enrique Garcia",title:"Behavior Analysis with Machine Learning Using R",publisher:"Chapman and Hall/CRC, 1st ed.",year:"2021",url:"https://enriquegit.github.io/behavior-free/index.html"},
+  {authors:"CHANG, Winston",title:"R Graphics Cookbook",publisher:"O'Reilly Media, 2nd ed.",year:"2018",url:"https://r-graphics.org/"},
+  {authors:"Curso-R",title:"Ciência de Dados em R",publisher:"Curso-R",year:"",url:"https://livro.curso-r.com/1-3-instalacao-adicionais.html"},
+  {authors:"DEBASTIANI, Vanderlei Julio",title:"Tutoriais para R",publisher:"Independent",year:"",url:"https://vanderleidebastiani.github.io/tutoriais/"},
+  {authors:"FAY, Colin",title:"Engineering Production-Grade Shiny Apps",publisher:"Chapman and Hall/CRC, 1st ed.",year:"2021",url:"https://engineering-shiny.org/index.html"},
+  {authors:"GROLEMUND, Garrett",title:"Hands-On Programming with R",publisher:"O'Reilly Media, 1st ed.",year:"2014",url:"https://rstudio-education.github.io/hopr/"},
+  {authors:"GROSSER, Malte; BUMANN, Henning; WICKHAM, Hadley",title:"Advanced R Solutions",publisher:"CRC Press, 2nd ed.",year:"2019",url:"https://adv-r.hadley.nz/index.html"},
+  {authors:"HYNDMAN, Rob J.; ATHANASOPOULOS, George",title:"Forecasting: Principles and Practice",publisher:"OTexts, 3rd ed.",year:"2021",url:"https://otexts.com/fpp3/"},
+  {authors:"IRIZARRY, Rafael A.",title:"Introduction to Data Science: Data Analysis and Prediction Algorithms with R",publisher:"Chapman and Hall/CRC, 1st ed.",year:"2019",url:"http://rafalab.dfci.harvard.edu/dsbook/"},
+  {authors:"ISMAY, Chester; KIM, Albert Y.",title:"Statistical Inference via Data Science: A ModernDive into R and the Tidyverse",publisher:"CRC Press, Illustrated ed.",year:"2019",url:"https://moderndive.com/index.html"},
+  {authors:"JANSSENS, Jeroen",title:"Data Science at the Command Line: Facing the Future with Time-Tested Tools",publisher:"O'Reilly Media, 1st ed.",year:"2014",url:"https://jeroenjanssens.com/dsatcl/"},
+  {authors:"JENKINS-SMITH, Hank et al.",title:"Quantitative Research Methods for Political Science, Public Policy and Public Administration: With Applications in R",publisher:"University of Oklahoma, 4th ed.",year:"",url:"https://bookdown.org/josiesmith/qrmbook/"},
+  {authors:"LOVELACE, Robin; GILLESPIE, Colin",title:"Efficient R Programming",publisher:"O'Reilly Media, 1st ed.",year:"2017",url:"https://csgillespie.github.io/efficientR/"},
+  {authors:"LUCIAN, Bruno; JAKELLINE, Claudia",title:"Introdução à Análise de Dados em R",publisher:"Independent",year:"2016",url:"https://bookdown.org/bruno_lucian_costa/CursoBasicoR/"},
+  {authors:"KUHN, Max; SILGE, Julia",title:"Tidy Modeling with R: A Framework for Modeling in the Tidyverse",publisher:"O'Reilly Media, 1st ed.",year:"2022",url:"https://www.tmwr.org/"},
+  {authors:"PENG, Roger D.",title:"R Programming for Data Science",publisher:"Lulu.com, 5th ed.",year:"2012",url:"https://bookdown.org/rdpeng/rprogdatascience/"},
+  {authors:"SIEVERT, Carson",title:"Interactive Web-Based Data Visualization with R, plotly, and shiny",publisher:"Chapman and Hall/CRC, 1st ed.",year:"2020",url:"https://plotly-r.com/"},
+  {authors:"SILGE, Julia; ROBINSON, David",title:"Text Mining with R: A Tidy Approach",publisher:"O'Reilly Media, 1st ed.",year:"2017",url:"https://www.tidytextmining.com/"},
+  {authors:"WICKHAM, Hadley",title:"Advanced R",publisher:"CRC Press, 2nd ed.",year:"2019",url:"https://adv-r.hadley.nz/"},
+  {authors:"WICKHAM, Hadley; GROLEMUND, Garrett",title:"R for Data Science",publisher:"Alta Books, 1st ed.",year:"2019",url:"https://r4ds.had.co.nz/index.html"},
+  {authors:"WICKHAM, Hadley",title:"ggplot2: Elegant Graphics for Data Analysis",publisher:"Springer, 3rd ed.",year:"2021",url:"https://ggplot2-book.org/index.html"},
+  {authors:"WICKHAM, Hadley",title:"Mastering Shiny",publisher:"O'Reilly Media, 1st ed.",year:"2021",url:"https://mastering-shiny.org/index.html"},
+  {authors:"WICKHAM, Hadley; BRYAN, Jenny",title:"R Packages: Organize, Test, Document, and Share Your Code",publisher:"O'Reilly Media, 1st ed.",year:"2015",url:"https://r-pkgs.org/index.html"},
+  {authors:"WILKE, Claus O.",title:"Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures",publisher:"O'Reilly Media, 1st ed.",year:"2019",url:"https://clauswilke.com/dataviz/"},
+  {authors:"XIE, Yihui",title:"bookdown: Authoring Books and Technical Documents with R Markdown",publisher:"CRC Press, 1st ed.",year:"2016",url:"https://bookdown.org/yihui/bookdown/"},
+  {authors:"XIE, Yihui; ALLAIRE, Joseph J.; GROLEMUND, Garrett",title:"R Markdown: The Definitive Guide",publisher:"CRC Press, 1st ed.",year:"2019",url:"https://bookdown.org/yihui/rmarkdown/"},
+  {authors:"XIE, Yihui; DERVIEUX, Christophe; RIEDERER, Emily",title:"R Markdown Cookbook",publisher:"CRC Press, 1st ed.",year:"2020",url:"https://bookdown.org/yihui/rmarkdown-cookbook/"},
+  {authors:"XIE, Yihui; THOMAS, Amber; HILL, Alison Presmanes",title:"blogdown: Creating Websites with R Markdown",publisher:"CRC Press, 1st ed.",year:"2017",url:"https://bookdown.org/yihui/blogdown/"},
+  {authors:"ZEVIANI, Walmes Marques",title:"Manual de Planejamento e Análise de Experimentos com R",publisher:"Departamento de Estatística da UFPR",year:"2019",url:"http://leg.ufpr.br/~walmes/mpaer/index.html"}
+];
+
+(function renderBooks(){
+  const esc = s => (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const host = (u) => { try { return new URL(u).hostname.replace(/^www\./,''); } catch(e){ return ''; } };
+  const list = document.getElementById('bookList');
+  list.innerHTML = BOOKS.map((b, i) => `
+    <li class="book-item">
+      <a class="book-link" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(b.title)} in new tab">
+        <span class="book-num">${String(i+1).padStart(2,'0')}</span>
+        <span class="book-main">
+          <span class="book-authors">${esc(b.authors)}</span>
+          <span class="book-title">${esc(b.title)}</span>
+          <span class="book-meta">
+            <span class="book-pub">${esc(b.publisher)}${b.year ? ', ' + esc(b.year) : ''}</span>
+            <span class="book-host">${esc(host(b.url))}</span>
+          </span>
+        </span>
+        <span class="book-arrow" aria-hidden="true"><i class="fa fa-arrow-up-right-from-square"></i></span>
+      </a>
+    </li>
+  `).join('');
+  // update count in case the array changes later
+  const c = document.querySelector('.book-count-num');
+  if (c) c.textContent = BOOKS.length;
+})();
+</script>
+<script src="labr-nav.js"></script>
+</body></html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grupo Lab R | Transformação Digital em Laboratórios Clínicos com R</title>
+  <meta name="description" content="Coletivo voluntário e sem fins lucrativos que aplica a linguagem R à gestão da qualidade em laboratórios clínicos. Ferramentas open source, intervalos de referência, controle de qualidade e biostatística."/>
+  <meta name="author" content="Grupo Lab R"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+  <link rel="canonical" href="https://grupolabr.com/"/>
+  <link rel="icon" type="image/png" href="imagens/logo_grupo_lab_r.png"/>
+  <link rel="apple-touch-icon" href="imagens/logo_grupo_lab_r.png"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Grupo Lab R"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="og:title" content="Grupo Lab R | Transformação Digital em Laboratórios Clínicos com R"/>
+  <meta property="og:description" content="Coletivo voluntário e sem fins lucrativos que aplica a linguagem R à gestão da qualidade em laboratórios clínicos. Ferramentas open source, intervalos de referência, controle de qualidade e biostatística."/>
+  <meta property="og:url" content="https://grupolabr.com/"/>
+  <meta property="og:image" content="https://grupolabr.com/imagens/logo_grupo_lab_r.png"/>
+  <meta property="og:image:alt" content="Logo do Grupo Lab R"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Grupo Lab R | Transformação Digital em Laboratórios Clínicos com R"/>
+  <meta name="twitter:description" content="Coletivo voluntário e sem fins lucrativos que aplica a linguagem R à gestão da qualidade em laboratórios clínicos. Ferramentas open source, intervalos de referência, controle de qualidade e biostatística."/>
+  <meta name="twitter:image" content="https://grupolabr.com/imagens/logo_grupo_lab_r.png"/>
+  <link rel="stylesheet" href="labr-style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <script defer src="labr-icons.js"></script>
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":["Organization","EducationalOrganization"],"@id":"https://grupolabr.com/#organization","name":"Grupo Lab R","alternateName":["Grupo LabR","GrupoLabR","Grupo Lab-R","Lab R Group","LabR Group","LabRGroup","Lab-R Group","LabR","Lab R"],"url":"https://grupolabr.com/","logo":{"@type":"ImageObject","url":"https://grupolabr.com/imagens/logo_grupo_lab_r.png","width":512,"height":512},"image":"https://grupolabr.com/imagens/logo_grupo_lab_r.png","description":"Grupo Lab R (Lab R Group) é um coletivo voluntário e sem fins lucrativos de cientistas e profissionais de laboratório clínico que aplica a linguagem de programação R à gestão da qualidade, intervalos de referência, validação de métodos, controle estatístico de qualidade e inteligência artificial em medicina diagnóstica. The Lab R Group is a non-profit collective applying R programming to clinical laboratory quality.","foundingDate":"2021","foundingLocation":{"@type":"Place","name":"Brasil"},"areaServed":"Brasil","knowsAbout":["Linguagem R","R programming language","Laboratório clínico","Clinical Laboratory","Medicina diagnóstica","Diagnostic medicine","Controle de Qualidade Estatístico","Statistical Quality Control","Intervalos de Referência","Reference Intervals","Validação de Métodos","Method Validation","CLSI","IFCC","Regras de Westgard","Westgard Rules","Six Sigma laboratório","Biostatística","Biostatistics","Inteligência Artificial em saúde","Machine Learning medicina laboratorial","Shiny applications","R Shiny","ISO 15189","Gestão da qualidade laboratorial"],"sameAs":["https://github.com/labrgrupo","https://github.com/labrgrupo/site_labrgroup","https://www.youtube.com/@grupolabr4872"]},{"@context":"https://schema.org","@type":"WebSite","@id":"https://grupolabr.com/#website","name":"Grupo Lab R","alternateName":["Lab R Group","GrupoLabR","LabR Group"],"url":"https://grupolabr.com/","inLanguage":["pt-BR","en"],"publisher":{"@id":"https://grupolabr.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://grupolabr.com/?q={search_term_string}","query-input":"required name=search_term_string"}}]</script>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="labr-nav">
+  <a href="index.html" class="nav-logo">
+    <img src="imagens/logo_grupo_lab_r.png" alt="Lab R Group"/>
+    <div class="brand-wrap">
+      <span class="brand">Grupo Lab R</span>
+      <span class="brand-sub">grupolabr.com</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="About_us.html">About Us</a></li>
+    <li><a href="Team.html">Team</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+    <li class="has-drop">
+      <a href="#">Tools</a>
+      <div class="drop">
+        <a href="LabRI_Packed.html"><i class="fa fa-cogs" style="width:16px"></i> LabRI Packed</a>
+        <a href="LabRI_chatbot.html"><i class="fa fa-robot" style="width:16px"></i> LabRI Chatbot</a>
+      </div>
+    </li>
+    <li class="has-drop">
+      <a href="#">Resources</a>
+      <div class="drop">
+        <a href="Book.html"><i class="fa fa-book" style="width:16px"></i> Books</a>
+        <a href="Presentations.html"><i class="fa fa-desktop" style="width:16px"></i> Presentations</a>
+        <a href="FAQ.html"><i class="fa fa-question-circle" style="width:16px"></i> FAQ</a>
+      </div>
+    </li>
+    <li><a href="Blog.html">Blog</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav -->
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="About_us.html">About Us</a>
+  <a href="Team.html">Team</a>
+  <a href="Projects.html">Projects</a>
+  <a href="LabRI_Packed.html">LabRI Packed</a>
+  <a href="LabRI_chatbot.html">LabRI Chatbot</a>
+  <a href="Book.html">Books</a>
+  <a href="Presentations.html">Presentations</a>
+  <a href="FAQ.html">FAQ</a>
+  <a href="Blog.html">Blog</a>
+  <a href="Contact.html">Contact</a>
+</div>
+
+<div class="page">
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-mesh">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+    <div class="hero-orbit">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+    </div>
+    <div class="hero-particles">
+      <span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span>
+      <span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span>
+    </div>
+    <div class="hero-badge">Open Source · Non-profit · Founded 2021</div>
+    <h1>Digital Transformation<br/>in <em>Clinical Labs</em></h1>
+    <p>A voluntary collective of specialists applying R programming and statistical tools to quality management in Brazilian clinical laboratories.</p>
+    <div class="hero-ctas">
+      <a href="About_us.html" class="btn-primary">Learn About Us</a>
+      <a href="Projects.html" class="btn-ghost">Explore Projects</a>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-num" data-target="2021">2021</span>
+        <span class="stat-label">Founded</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="7">0</span>
+        <span class="stat-label">Specialists</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="100">0</span>
+        <span class="stat-label">% Open Source</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="2">0</span>
+        <span class="stat-label">Tools Built</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHAT WE DO ── -->
+  <section class="section">
+    <div class="section-label">// what we do</div>
+    <h2 class="section-title">Quality Management<br/>Powered by R</h2>
+    <p class="section-body">The LabR Group bridges the gap between statistical science and clinical practice — building free, open-source tools that help Brazilian laboratories achieve excellence through data.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon" data-icon="chart"></div>
+        <h3>Statistical Quality Control</h3>
+        <p>Advanced SQC methods implemented in R — Westgard rules, sigma metrics, OPSpecs charts and beyond.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon cyan" data-icon="target"></div>
+        <h3>Reference Intervals</h3>
+        <p>Automated reference interval computation with the <span class="chip">LabRI</span> suite — robust, partitioned, and IFCC-compliant.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" data-icon="network"></div>
+        <h3>AI &amp; Machine Learning</h3>
+        <p>Applying clustering, classification and AI to diagnostic problems — from delta checks to result plausibility.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon cyan" data-icon="dotGrid"></div>
+        <h3>Method Validation</h3>
+        <p>Bias, precision, linearity and measurement uncertainty workflows following CLSI and ISO 15189 standards.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" data-icon="stack"></div>
+        <h3>Education &amp; Publications</h3>
+        <p>A growing book, blog, presentations and YouTube tutorials — all freely available in Portuguese and English.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon cyan" data-icon="globe"></div>
+        <h3>Open Science</h3>
+        <p>All code published on GitHub. Every tool, every analysis, every method is transparent and reproducible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VIDEO ── -->
+  <section class="section" style="padding-top:0; text-align:center;">
+    <div class="section-label" style="text-align:center;">// watch</div>
+    <h2 class="section-title" style="text-align:center;">See What We're Building</h2>
+    <p class="section-body" style="margin:0 auto 0;">Subscribe to our YouTube channel for tutorials, project walkthroughs and quality management deep-dives.</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/CInPrwDL0m4?si=5nwjoQ9Uyy8b3hS0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen title="Grupo Lab R — Introduction"></iframe>
+    </div>
+  </section>
+
+  <!-- ── CTA CARDS ── -->
+  <section class="section" style="padding-top:0;">
+    <div class="section-label">// explore</div>
+    <h2 class="section-title">Dive Deeper</h2>
+    <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px,1fr));">
+      <a class="card-cta" href="Blog.html">
+        <div class="card-banner" data-banner="blog"></div>
+        <div class="card-cta-body">
+          <h3>Blog</h3>
+          <p>R programming in lab medicine — tutorials, case studies and open code.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+      <a class="card-cta" href="Projects.html">
+        <div class="card-banner" data-banner="projects"></div>
+        <div class="card-cta-body">
+          <h3>Projects</h3>
+          <p>Discover our active projects and open-source tools for the clinical lab.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+      <a class="card-cta" href="Book.html">
+        <div class="card-banner" data-banner="book"></div>
+        <div class="card-cta-body">
+          <h3>Book</h3>
+          <p>Our free online book — statistical quality in clinical labs with R.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── TOOLS SPOTLIGHT ── -->
+  <section class="section" style="padding-top:0;">
+    <div class="section-label">// tools</div>
+    <h2 class="section-title">LabRI Suite</h2>
+    <p class="section-body">Our flagship toolset for computing reference intervals — available as a Shiny app and an AI-powered chatbot.</p>
+    <div class="cards-grid" style="margin-top:32px;">
+      <a class="card-cta" href="LabRI_Packed.html">
+        <div class="card-banner" data-banner="tools"></div>
+        <div class="card-cta-body">
+          <h3>LabRI Packed <span class="chip">Shiny</span></h3>
+          <p>Full reference interval computation engine — robust statistics, partition testing, and more.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+      <a class="card-cta" href="LabRI_chatbot.html">
+        <div class="card-banner" data-banner="chatbot"></div>
+        <div class="card-cta-body">
+          <h3>LabRI Chatbot <span class="chip">AI</span></h3>
+          <p>Ask questions about reference intervals and get statistically grounded answers powered by AI.</p>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+  <!-- ── ABOUT / SOBRE (bilingual, entity + keyword signals) ── -->
+  <section class="section" style="padding-top:0;">
+    <div class="about-grid">
+      <div class="about-col">
+        <div class="section-label">// sobre o grupo lab r</div>
+        <h2 class="about-h" lang="pt-BR">Grupo Lab R</h2>
+        <p class="about-p" lang="pt-BR">
+          O <strong>Grupo Lab R</strong> — também conhecido como <em>Lab R Group</em>, <em>LabR Group</em> ou <em>GrupoLabR</em> —
+          é um coletivo voluntário e sem fins lucrativos, fundado em 2021 e afiliado ao Comitê de Qualidade
+          da <strong>SBPC/ML</strong>. Reunimos cientistas, médicos patologistas clínicos, farmacêuticos,
+          biomédicos, bioestatísticos e desenvolvedores que aplicam a
+          <strong>linguagem R no laboratório clínico</strong> para transformar a
+          <strong>medicina diagnóstica</strong> brasileira.
+        </p>
+        <p class="about-p" lang="pt-BR">
+          Nossas frentes: <strong>intervalos de referência</strong>, <strong>controle estatístico de qualidade</strong>,
+          validação de métodos seguindo diretrizes <strong>CLSI</strong> e <strong>IFCC</strong>, regras de
+          Westgard, métricas Six Sigma, cálculos de incerteza, <strong>inteligência artificial</strong> e
+          <strong>machine learning</strong> aplicados ao diagnóstico, e dashboards interativos em
+          <strong>R Shiny</strong>. Todo o código é aberto, gratuito e reproduzível.
+        </p>
+      </div>
+      <div class="about-col">
+        <div class="section-label">// about the lab r group</div>
+        <h2 class="about-h" lang="en">Lab R Group</h2>
+        <p class="about-p" lang="en">
+          The <strong>Lab R Group</strong> (Portuguese: <em>Grupo Lab R</em>) is a non-profit volunteer collective
+          of clinical laboratory scientists applying the <strong>R programming language</strong> to
+          <strong>clinical laboratory quality management</strong>. We build free, open-source tools for
+          <strong>reference intervals</strong>, statistical quality control, <strong>method validation</strong>,
+          and AI-powered diagnostic assistance — aligned with CLSI and IFCC guidelines.
+        </p>
+        <p class="about-p" lang="en">
+          Flagship projects include <strong>LabRI Packed</strong> (a Shiny app for robust reference-interval
+          computation with refineR, Horn, Tukey and Harris–Boyd partitioning) and
+          <strong>LabRI Chatbot</strong> (an AI assistant grounded in laboratory-medicine literature). All
+          work is published openly on GitHub under <code>grupolabr.com</code>.
+        </p>
+      </div>
+    </div>
+    <div class="about-tags">
+      <span class="tag">linguagem R</span>
+      <span class="tag">R programming language</span>
+      <span class="tag">laboratório clínico</span>
+      <span class="tag">clinical laboratory</span>
+      <span class="tag">medicina diagnóstica</span>
+      <span class="tag">diagnostic medicine</span>
+      <span class="tag">intervalos de referência</span>
+      <span class="tag">reference intervals</span>
+      <span class="tag">controle de qualidade</span>
+      <span class="tag">Westgard rules</span>
+      <span class="tag">Six Sigma</span>
+      <span class="tag">ISO 15189</span>
+      <span class="tag">CLSI EP28</span>
+      <span class="tag">IFCC</span>
+      <span class="tag">R Shiny</span>
+      <span class="tag">refineR</span>
+      <span class="tag">bioestatística</span>
+      <span class="tag">biostatistics</span>
+      <span class="tag">machine learning</span>
+      <span class="tag">inteligência artificial</span>
+      <span class="tag">SBPC/ML</span>
+      <span class="tag">open source</span>
+    </div>
+  </section>
+
+<!-- ── FOOTER ── -->
+<footer class="labr-footer">
+  <div class="footer-logo"><img src="imagens/logo_grupo_lab_r.png" alt="Lab R Group"/></div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="About_us.html">About Us</a>
+    <a href="Team.html">Team</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Blog.html">Blog</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://github.com/labrgrupo/site_labrgroup" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.youtube.com/@grupolabr4872/videos" title="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+  <div class="footer-copy">© 2021–2026 Grupo Lab R · Todos os direitos reservados</div>
+  <div class="footer-mono">// open source · non-profit · made with R</div>
+  <div class="footer-meta">
+    <span class="meta-item"><span class="dot"></span><span class="meta-label">Site</span><span class="meta-value">Grupo Lab R</span></span>
+    <span class="meta-item"><span class="dot"></span><span class="meta-label">Developed by</span><span class="meta-value">Alan Carvalho Dias</span></span>
+    <span class="meta-item"><span class="dot"></span><span class="meta-label">Last update</span><span class="meta-value">April 2026</span></span>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const ham = document.getElementById('hamburger');
+  const mob = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => mob.classList.toggle('open'));
+
+  // Scroll reveal
+  const revealIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.section, .card, .card-cta, .team-card, .stat-item').forEach(el => {
+    el.classList.add('reveal'); revealIO.observe(el);
+  });
+
+  // Card cursor glow
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+    });
+  });
+
+  // Counter animation
+  const counters = document.querySelectorAll('[data-target]');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const target = +el.dataset.target;
+      const start = target === 2021 ? 2015 : 0;
+      const duration = 1400;
+      const step = (timestamp) => {
+        if (!el._start) el._start = timestamp;
+        const progress = Math.min((timestamp - el._start) / duration, 1);
+        const val = Math.floor(start + (target - start) * easeOut(progress));
+        el.textContent = target === 100 ? val + '%' : val;
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target === 100 ? '100%' : target;
+      };
+      requestAnimationFrame(step);
+      io.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => io.observe(c));
+  function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+</script>
+
+<script>
+  // Nav auto-hide on scroll
+  (function(){
+    const nav = document.querySelector('.labr-nav');
+    let last = 0;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      nav.classList.toggle('scrolled', y > 40);
+      if (y > last && y > 140) nav.classList.add('hidden');
+      else nav.classList.remove('hidden');
+      last = y;
+    }, { passive: true });
+  })();</script>
+<script src="labr-nav.js"></script>
+</body>
+</html>

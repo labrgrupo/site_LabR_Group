@@ -1,0 +1,6 @@
+# robots.txt — Grupo Lab R
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://grupolabr.com/sitemap.xml
